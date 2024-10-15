@@ -1,14 +1,12 @@
 body {
-    background-color: #944304;
+    background-color: #0070D1;
   }
   
   h1 {
-    color: white;
     text-align: center;
-    text-shadow: 2px 2px #ED9E9F;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
   }
-  
+
   p {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 20px;
@@ -35,7 +33,22 @@ a:visited {
     font-family: verdana, cursive;
 }
 
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
+img {
+  aspect-ratio: 1;
+  object-fit: fill;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px); /* 5 equal-width columns */
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 250px; /* Set a fixed width for the icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
